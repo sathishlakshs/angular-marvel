@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 import {ROUTE_URLS} from './constants/routeurls';
 
 export const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: `${ROUTE_URLS.HOME}` },
 {
   path: ROUTE_URLS.COSMICS,
   loadChildren: () =>
@@ -29,7 +28,8 @@ export const routes: Routes = [
   path: ROUTE_URLS.VIEWDETAILS,
   loadChildren: () =>
     import('./module/view-details/view-details.module').then((m) => m.ViewDetailsModule),
-}
+},
+{path: '**', pathMatch: 'full', redirectTo: `${ROUTE_URLS.HOME}`},
 ];
 
 @NgModule({
