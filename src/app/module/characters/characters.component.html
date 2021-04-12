@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="relative h47 cardTitleContainer mb20">
+        <div class="blueLine"></div>
+        <div class="cardTitle">{{title}} ({{service.count}})</div>
+    </div>
+    <div  infinite-scroll
+    [infiniteScrollDistance]="scrollDistance"
+    [infiniteScrollUpDistance]="scrollUpDistance"
+    [infiniteScrollThrottle]="throttle"
+    (scrolled)="onScrollDown()"
+    (scrolledUp)="onUp()">
+    <div class="flex flow-wrap justify-even mt30" >
+      <ng-container *ngIf="service.list.length > 0; else imgloader">
+        <ng-container *ngFor="let item of service.list">
+          <div class="mb30">
+          <app-poster [imagePath]="item.imagePath" [data]="item"></app-poster>
+        </div>
+        </ng-container>
+      </ng-container>
+      <ng-template #imgloader>
+        <ng-container *ngFor="let i of appService.arrayIterate(40);">
+          <app-poster [imagePath]="'https://react-marvel-poc.fidisys.com/static/media/img-placeholder.8c8590c4.svg'" [data]="item"></app-poster>
+        </ng-container>
+      </ng-template>
+    </div>
+    </div>
+    </div>

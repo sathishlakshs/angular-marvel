@@ -1,0 +1,13 @@
+.mat-tab-links {
+    background-color: var(--nav-bg-color);
+}
+
+.mat-tab-link {
+    opacity: 1 !important;
+    color: var(--white);
+}
+
+.mat-ink-bar {
+    background-color: var(--active-tab-ink) !important;
+    height: 5px !important;
+}

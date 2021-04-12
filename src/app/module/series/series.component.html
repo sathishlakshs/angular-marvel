@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <div class="relative h47 cardTitleContainer mb20">
+        <div class="blueLine"></div>
+        <div class="cardTitle">{{title}} ({{service.count}})</div>
+    </div>
+    <div class="flex flow-wrap justify-even mt30">
+      <ng-container *ngIf="service.list.length > 0; else imgloader">
+        <ng-container *ngFor="let item of service.list">
+          <div class="mb30">
+          <app-poster [imagePath]="item.imagePath" [data]="item"></app-poster>
+        </div>
+        </ng-container>
+      </ng-container>
+      <ng-template #imgloader>
+        <ng-container *ngFor="let i of appService.arrayIterate(40);">
+          <app-poster [imagePath]="'https://react-marvel-poc.fidisys.com/static/media/img-placeholder.8c8590c4.svg'" [data]="item"></app-poster>
+        </ng-container>
+      </ng-template>
+      </div>
+
+      <!-- <nz-pagination [nzPageIndex]="1" [nzTotal]="500"></nz-pagination> -->
+      <div class="middle">
+        {{size + 1}}-{{size + pageSize}} of {{service.count}} items<nz-pagination [nzPageIndex]="pageIndex" [nzTotal]="service.count" [nzPageSize]="pageSize" (nzPageIndexChange)="onPageIndexChange($event)" ></nz-pagination>
+      </div>

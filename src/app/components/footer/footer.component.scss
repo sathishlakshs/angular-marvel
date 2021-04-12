@@ -1,0 +1,21 @@
+.footerContainer {
+    padding: 20px;
+    background-color: var(--nav-bg-color);
+    p {
+        text-align: center;    
+        font-size: 18px;
+        line-height: 1.6;
+        :hover {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+        }
+        a {
+            color: var(--white);
+            text-decoration: none;
+            cursor: pointer;
+            span {
+                color: var(--ink);
+            }
+        }
+    }
+}

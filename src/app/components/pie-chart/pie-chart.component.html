@@ -1,0 +1,25 @@
+<div class="flex mt30">
+  <div class="middle">
+<ngx-charts-pie-chart
+[view]="view"
+  [results]="data"
+  [scheme]="colorScheme">
+  <ng-template #tooltipTemplate let-model="model">
+    <h1>
+      {{model.name}}
+    </h1>
+    <h2>{{model.value}}%</h2>
+  </ng-template>
+</ngx-charts-pie-chart>
+</div>
+<div class="middle">
+  <div>
+    <ng-container *ngFor="let item of legends">
+      <div>
+        <div class="typo2 whitecyan">{{ item.label }}</div>
+        <div [class]="item.class">{{ item.value | number }}</div>
+      </div>
+    </ng-container>
+  </div>
+  </div>
+</div>

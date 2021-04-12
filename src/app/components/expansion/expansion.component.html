@@ -1,0 +1,22 @@
+  <mat-accordion class="headers-align" multi [togglePosition]="togglePosition">
+    <mat-expansion-panel class="mat-elevation-z0" [expanded]="true" >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            <div class="relative h47 cardTitleContainer over-inherit">
+                <div class="blueLine"></div>
+                <div class="cardTitle">{{title}}</div>
+            </div>
+        </mat-panel-title>
+        <mat-panel-description>
+          <p class="linkLabel">
+            <a (click)="redirectTo($event, path)">{{linkLabel}}</a>
+            </p>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+        <div class="slick-container">
+              <div class="" *ngFor="let item of children">
+                <app-poster [imagePath]="item.imagePath" [data]="item"></app-poster>
+            </div>
+        </div>
+    </mat-expansion-panel>
+  </mat-accordion>

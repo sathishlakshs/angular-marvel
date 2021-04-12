@@ -1,0 +1,12 @@
+<nav mat-tab-nav-bar  mat-align-tabs="center">
+  <a mat-tab-link
+  *ngFor="let item of menus"
+  [routerLink]="item.path"
+  routerLinkActive #rla="routerLinkActive"
+  [active]="rla.isActive">
+  {{item.label}}
+  </a>
+  </nav>
+  <div class="contentMinHeight body-bg-color">
+  <router-outlet></router-outlet>
+  </div>

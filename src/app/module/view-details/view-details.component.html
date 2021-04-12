@@ -1,0 +1,37 @@
+
+    <ng-container *ngIf="service.data">
+    <div class="viewHeaderContainer">
+        <img [src]="service.data.imagePath" alt="" />
+    </div>
+    <div class="content-viewdetails" [ngStyle]="{'background-image': 'url(' + service.data.imagePath + ')'}">
+        <div class="linearContainer">
+            <div class="txt-center">
+                <p class="title-viewdetail mb30 txt-center">{{service.data.name ? (service.data.name) : (service.data.title)}}</p>
+                <p class="des-viewdetail mb30 txt-center">
+                    {{service.data?.description ? (service.data?.description) : 'Description not available.' }}
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <div class="countCard" *ngIf="service.data?.comics?.available">
+                    <div class="count">{{service.data?.comics?.available}}</div>
+                    <p class="countTitle">
+                        Comics <br>
+                        Available
+                    </p>
+                </div>
+                <div class="countCard" *ngIf="service.data?.series?.available">
+                    <div class="count">{{service.data?.series?.available}}</div>
+                    <p class="countTitle">Series <br>Available</p>
+                </div>
+                <div class="countCard" *ngIf="service.data?.stories?.available">
+                    <div class="count">{{service.data?.stories?.available}}</div>
+                    <p class="countTitle">Stories <br>Available</p>
+                </div>
+                <div class="countCard" *ngIf="service.data?.events?.available">
+                    <div class="count">{{service.data?.events?.available}}</div>
+                    <p class="countTitle">Events <br>Available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

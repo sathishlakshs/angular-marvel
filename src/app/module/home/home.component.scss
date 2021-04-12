@@ -1,0 +1,62 @@
+.carouselContainer {
+    margin-top: -1px;
+.chartContainer {
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    background-image:  linear-gradient(to right, rgb(34, 55, 79), rgb(13, 37, 63, 0.5)), url('https://react-marvel-poc.fidisys.com/static/media/carousel-img.6bbf546f.png');
+    background-size: cover;
+    height: 352px;
+    cursor: default;
+    .charts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        cursor: default;
+    }
+}
+}
+
+// .mat-focus-indicator, .mat-mini-fab .mat-button-base .mat-white .ng-star-inserted .mat-button-disabled
+
+// ::ng-deep .mat-focus-indicator, .mat-mini-fab, .mat-button-base, .mat-white, .ng-star-inserted, .mat-button-disabled {
+//     width: 24px;
+//     background: #566472;
+//     height: 5px;
+//     border-radius: 4px;
+//     list-style: none;
+//     margin-top: 10px;
+//     cursor: pointer;
+// }
+
+// ::ng-deep .mat-focus-indicator {
+//     width: 24px;
+//     background: #566472;
+//     height: 5px;
+//     border-radius: 4px;
+//     list-style: none;
+//     margin-top: 10px;
+//     cursor: pointer;
+// }
+
+.carousel-indicators {
+    width: 24px;
+    background: #566472;
+    height: 5px;
+    border-radius: 4px;
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.carousel-indicators:hover {
+    background-color: #bfcad4;
+    cursor: pointer;
+}
+
+.active-indicator {
+    width: 48px;
+    background: #fff;
+    cursor: pointer;
+}

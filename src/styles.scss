@@ -1,1 +1,258 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --nav-bg-color: #0d253f;
+    --white: #ffffff;
+    --active-tab-ink: #01b4e4;
+    --body-bg: #f5f8fa;
+    --ink: #01b4e4;
+}
+
+html, body { height: 100%; }
+body { 
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: var(--body-bg);
+}
+
+.typo1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.typo2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.body-bg-color {
+    background: var(--body-bg);
+}
+
+.vh100 {
+    height: 100vh !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.flow-wrap {
+    flex-flow: wrap;
+}
+.justify-center {
+    justify-content: center
+}
+
+.justify-even {
+    justify-content: space-evenly
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.align-middle {
+    align-items: center;
+}
+
+.over-inherit {
+    overflow: inherit !important;
+}
+
+.over-hidden{
+    overflow: hidden !important;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentMinHeight {
+    min-height: calc(100vh - 233px);
+}
+
+.f1-6em {
+    font-size: 1.6em;
+}
+
+.f2em {
+    font-size: 2em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.color-grey {
+    color: grey;
+}
+
+.logo-bg {
+    background-color: var(--nav-bg-color);
+}
+
+.pt18 {
+    padding-top: 18px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.p3rem {
+    padding-top: 3rem;
+}
+
+.pt1rem {
+    padding-top: 1rem;
+}
+
+.pt3rem {
+    padding-top: 3rem;
+}
+
+.pb0-5rem {
+    padding-bottom: 0.5rem;
+}
+
+.pb1rem {
+    padding-bottom: 1rem;
+}
+
+.pl5 {
+    padding-left: 5px;
+}
+
+.pl2rem {
+    padding-left: 2rem;
+}
+
+.plr6rem {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.plr10per {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.relative {
+    position: relative;
+}
+
+.h47 {
+    height: 47px;
+}
+
+.ml8 {
+    margin-left: 8px;
+}
+
+.mr8 {
+    margin-right: 8px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px !important;
+}
+
+.wrapper {
+    padding: 50px 20px 50px 30px;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.w240 {
+    width: 240px !important;
+}
+
+.w24 {
+    width: 24px;
+}
+
+.default {
+    cursor: default !important;
+}
+
+.cardTitleContainer {
+    overflow: hidden;
+    .cardTitle {
+        font-size: 24px;
+    font-weight: bold;
+    word-spacing: 4px;
+    margin-bottom: 0px;
+    position: absolute;
+    color: rgb(13, 37, 63);
+    text-transform: uppercase;
+    background-color: rgb(245, 248, 250);
+    padding: 0;
+    top: 14px;
+    }
+    .blueLine {
+        position: absolute;
+        color: rgb(204, 204, 204);
+        font-size: 26px;
+        height: 90px;
+        width: 3px;
+        background-color: rgb(1, 180, 228);
+        transform: rotate(45deg);
+        top: -30px;
+        left: 35px;
+    }
+}
+
+.whitecyan {
+    color: rgb(245, 248, 250);
+}
+
+.cyan {
+    color: rgb(87, 220, 255);
+}
+
+.lightgreen {
+    color: #79b39c;
+}
+
+.slick-dots {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    list-style-type: none !important;
+}

@@ -1,0 +1,53 @@
+ 
+ .headers-align {
+    .mat-expansion-panel-header {
+        background-color: var(--body-bg);
+        height: 64px;
+    }
+    .mat-expansion-panel-header-title,  .mat-expansion-panel-header-description {
+        flex-basis: 0;
+    }
+    .mat-expansion-panel-header-description {
+        justify-content: end;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .mat-expansion-panel-body {
+        background-color: var(--body-bg);
+    }
+    .mat-expanded {
+        background-color: var(--body-bg);
+    }
+
+    .linkLabel {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(1, 180, 228);
+        :hover {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+        }
+    }
+    }
+
+    .posterListContianer {
+        .leftSlickArrow {
+            position: absolute;
+            left: -25px;
+            top: 95px;
+            z-index: 9;
+            padding: 8px;
+            color: red;
+            cursor: pointer;
+        }
+    
+        .rightSlickArrow {
+            position: absolute;
+            top: 95px;
+            right: -25px;
+            padding: 8px;
+            z-index: 9;
+            color: red;
+            cursor: pointer;
+        }
+    }

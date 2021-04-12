@@ -1,0 +1,28 @@
+<div class="posterWrapper">
+<ng-container *ngIf="data; else imgLoader">
+        <div class="poster" (click)="redirectTo()">
+        <div>
+        <img [src]="imagePath" />
+        <div class="postLinear">
+            <div class="txt-center mb8" >
+                <p class="title">{{data?.name ? (data.name) : (data.title)}}</p>
+                <p class="des-poster">{{data?.description ? (data?.description) : 'card description not available for this card' }}</p>
+                <button mat-stroked-button class="viewbtn">View Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+</ng-container>
+<ng-template #imgLoader>
+    <div class="poster mt20">
+    <div class="loaderPost">
+    <div>
+        <img [src]="imagePath"/>
+        <p class="txt-center">loading...</p>
+    </div>
+    <div class="postLinear">
+    </div>
+</div>
+</div>
+</ng-template>
+</div>
